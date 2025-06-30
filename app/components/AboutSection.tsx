@@ -1,17 +1,17 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Coffee, Gamepad2, Music } from "lucide-react"
+import { Code, Coffee, DumbbellIcon, Gamepad2, Music } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { BackgroundBeams } from "./ui/background-beams-demo"
 
 export default function AboutSection() {
   const funFacts = [
-    { icon: Code, text: "1+ years of coding experience", color: "text-white" },
+    { icon: Code, text: "2+ years of coding experience", color: "text-white" },
     { icon: Coffee, text: "Coffee enthusiast ☕", color: "text-gray-300" },
-    { icon: Gamepad2, text: "Reading in free time 🎮", color: "text-gray-300" },
+    { icon: DumbbellIcon, text: "Gym enthusiast 🏋️‍♂️", color: "text-gray-300" },
     { icon: Music, text: "Music lover 🎵", color: "text-gray-300" },
-  ]
+  ];
 
   return (
     <section id="about" className="py-20 px-4 relative overflow-hidden">

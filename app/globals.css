@@ -276,3 +276,24 @@ html {
 .metallic-text:hover {
   animation-duration: 1s;
 }
+
+.metallic-text-purple {
+  background: linear-gradient(
+    135deg,
+    #a259ff 0%,
+    #c084fc 15%,
+    #a259ff 30%,
+    #7c3aed 45%,
+    #c084fc 60%,
+    #a259ff 75%,
+    #6d28d9 90%,
+    #c084fc 100%
+  );
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 0 rgba(192, 132, 252, 0.4), 0 2px 0 rgba(124, 58, 237, 0.2), 0 3px 0 rgba(124, 58, 237, 0.1), 0 4px 0
+    rgba(124, 58, 237, 0.1), 0 5px 10px rgba(124, 58, 237, 0.3);
+  animation: metallic-shine 3s ease-in-out infinite;
+}

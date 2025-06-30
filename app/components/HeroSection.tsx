@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button"
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect"
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision"
 import { SparklesCore } from "@/components/ui/sparkles"
+import ColourfulText from "./ui/colourful-text"
+import { ContainerTextFlip } from "./ui/container-text-flip"
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -62,7 +64,6 @@ export default function HeroSection() {
               👋 Welcome to my portfolio
             </span> */}
           </motion.div>
-
           {/* Greeting Text */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -70,9 +71,12 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="mb-6"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              Hi, I'm
-            </h2>
+            <span className="text-sm px-3 py-1">
+              <ContainerTextFlip
+                className="text-sm"
+                words={["Hi, I am", "मैं हूँ", "Bonjour, je suis"]}
+              />
+            </span>
           </motion.div>
 
           {/* Metallic Name with Sparkles */}
@@ -107,9 +111,14 @@ export default function HeroSection() {
             </div>
 
             {/* Name Text */}
-            <h1 className="metallic-text text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight relative z-10">
-              Deepanshu
-            </h1>
+            <div className="flex">
+              <h1 className="metallic-text text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight relative z-10">
+                Deepanshu &nbsp;
+              </h1>
+              <h1 className="metallic-text text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight relative z-10">
+                Sirohi
+              </h1>
+            </div>
           </motion.div>
 
           {/* Role Description with Typewriter Effect */}
