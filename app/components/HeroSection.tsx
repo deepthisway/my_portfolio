@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect"
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision"
 import { SparklesCore } from "@/components/ui/sparkles"
-import ColourfulText from "./ui/colourful-text"
 import { ContainerTextFlip } from "./ui/container-text-flip"
 
 export default function HeroSection() {
@@ -18,16 +17,6 @@ export default function HeroSection() {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
   }
 
-  const greetingWords = [
-    {
-      text: "Hi,",
-      className: "text-white",
-    },
-    {
-      text: "I'm",
-      className: "text-white",
-    },
-  ]
 
   const roleWords = [
     {
@@ -71,12 +60,9 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="mb-6"
           >
-            <span className="text-sm px-3 py-1">
-              <ContainerTextFlip
-                className="text-sm"
-                words={["Hi, I am", "मैं हूँ", "Bonjour, je suis"]}
-              />
-            </span>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-gray-300">
+              Hi, I'm{" "}
+            </h1>
           </motion.div>
 
           {/* Metallic Name with Sparkles */}
