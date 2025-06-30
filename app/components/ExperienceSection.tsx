@@ -21,7 +21,7 @@ export default function ExperienceSection() {
       tech: ["Next JS","React", "Express.js", "MongoDB", "Tailwind CSS"],
       website: "makemepro.in",
       badge: "Full Stack",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/makemepro.png?height=400&width=600",
     },
     // {
     //   title: "Frontend Developer",

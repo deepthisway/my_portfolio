@@ -5,47 +5,48 @@ import { ExternalLink, Github, ArrowRight, Star, Calendar, Code } from "lucide-r
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { PinContainer } from "@/components/ui/3d-pin"
+import Image from "next/image"
 
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Make Me Pro",
       description:
-        "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      image: "/placeholder.svg?height=300&width=500",
+        "A full-stack study pltform solution with NextJs, React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
+      image: "/makemepro.png",
       tech: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-      liveUrl: "https://ecommerce-demo.vercel.app",
-      githubUrl: "https://github.com/deepanshu/ecommerce",
+      liveUrl: "https://makemepro.in",
+      githubUrl: "https://github.com/deepthisway/makemepro.git",
       featured: true,
       status: "Live",
       year: "2024",
       gradient: "from-blue-500 via-purple-500 to-pink-500",
     },
     {
-      title: "Task Management App",
+      title: "Transcript Generator",
       description:
-        "A collaborative task management application built with Next.js and PostgreSQL. Real-time updates with Socket.io and beautiful UI with Framer Motion.",
+        "A Next.js app that generates college transcripts from user data. Features include real-time data validation, PDF generation, and user-friendly interface.",
       image: "/placeholder.svg?height=300&width=500",
       tech: ["Next.js", "PostgreSQL", "Socket.io", "Framer Motion"],
-      liveUrl: "https://taskmanager-demo.vercel.app",
-      githubUrl: "https://github.com/deepanshu/taskmanager",
+      liveUrl: "transcript-generator-five.vercel.app",
+      githubUrl: "https://github.com/deepthisway/Transcript-Generator.git",
       featured: true,
       status: "Live",
       year: "2024",
       gradient: "from-green-500 via-teal-500 to-blue-500",
     },
     {
-      title: "Weather Dashboard",
+      title: "Portfolio Website",
       description:
-        "A responsive weather dashboard with location-based forecasts, interactive charts, and beautiful animations.",
-      image: "/placeholder.svg?height=300&width=500",
-      tech: ["React", "Chart.js", "OpenWeather API", "CSS3"],
-      liveUrl: "https://weather-dashboard-demo.vercel.app",
-      githubUrl: "https://github.com/deepanshu/weather-dashboard",
+        "A stunning portfolio website with smooth animations, dark mode, and responsive design. Built with Next.js and Framer Motion.",
+      image: "/",
+      tech: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
+      liveUrl: "deepportfolio-one.vercel.app",
+      githubUrl: "https://github.com/deepanshu/portfolio",
       featured: true,
       status: "Live",
-      year: "2023",
-      gradient: "from-orange-500 via-red-500 to-pink-500",
+      year: "2024",
+      gradient: "from-cyan-500 via-blue-500 to-purple-500",
     },
     {
       title: "Blog Platform",
@@ -61,19 +62,6 @@ export default function ProjectsSection() {
       gradient: "from-purple-500 via-violet-500 to-blue-500",
     },
     {
-      title: "Portfolio Website",
-      description:
-        "A stunning portfolio website with smooth animations, dark mode, and responsive design. Built with Next.js and Framer Motion.",
-      image: "/placeholder.svg?height=300&width=500",
-      tech: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
-      liveUrl: "https://portfolio-demo.vercel.app",
-      githubUrl: "https://github.com/deepanshu/portfolio",
-      featured: false,
-      status: "Live",
-      year: "2024",
-      gradient: "from-cyan-500 via-blue-500 to-purple-500",
-    },
-    {
       title: "Chat Application",
       description:
         "Real-time chat application with rooms, file sharing, and emoji support. Built with Socket.io and React.",
@@ -86,7 +74,7 @@ export default function ProjectsSection() {
       year: "2024",
       gradient: "from-emerald-500 via-green-500 to-teal-500",
     },
-  ]
+  ];
 
   const featuredProjects = projects.filter((project) => project.featured)
   const otherProjects = projects.filter((project) => !project.featured)
@@ -186,7 +174,7 @@ export default function ProjectsSection() {
 
                   {/* Project Image/Gradient */}
                   <div className={`flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br ${project.gradient}`} />
-
+                  {/* <Image src="/makemepro.png" height={200} width={200} alt="image" /> */}
                   {/* Action Buttons */}
                   <div className="flex justify-between items-center mt-4 pt-2">
                     <a
