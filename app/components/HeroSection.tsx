@@ -101,7 +101,7 @@ export default function HeroSection() {
               <h1 className="metallic-text text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight relative z-10">
                 Deepanshu &nbsp;
               </h1>
-              <h1 className="metallic-text text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight relative z-10">
+              <h1 className="hidden md:block metallic-text text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight relative z-10">
                 Sirohi
               </h1>
             </div>
@@ -128,7 +128,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 5 }}
             className="mb-12"
           >
-            <p className="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            <p className=" text-sm md:text-wrap lg:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
               I craft exceptional digital experiences with modern web
               technologies ...
             </p>
