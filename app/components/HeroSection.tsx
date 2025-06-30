@@ -70,7 +70,9 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="mb-6"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">Hi, I'm</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              Hi, I'm
+            </h2>
           </motion.div>
 
           {/* Metallic Name with Sparkles */}
@@ -132,7 +134,8 @@ export default function HeroSection() {
             className="mb-12"
           >
             <p className="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              I craft exceptional digital experiences with modern web technologies ...
+              I craft exceptional digital experiences with modern web
+              technologies ...
             </p>
           </motion.div>
 
@@ -161,14 +164,16 @@ export default function HeroSection() {
               View Projects
             </Button>
 
-            <Button
-              variant="outline"
-              size="lg"
-              className="px-8 py-3 rounded-full font-medium border-2 border-white/20 text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-200 bg-transparent"
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Resume
-            </Button>
+            <a href="/resume.pdf" download>
+              <Button
+                variant="outline"
+                size="lg"
+                className="px-8 py-3 rounded-full font-medium border-2 border-white/20 text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-200 bg-transparent"
+              >
+                <Download className="mr-2 h-4 w-4" />
+                Resume
+              </Button>
+            </a>
           </motion.div>
 
           {/* Social Links */}
@@ -179,8 +184,16 @@ export default function HeroSection() {
             className="flex justify-center space-x-6"
           >
             {[
-              { icon: Github, href: "https://github.com/deepthisway", label: "GitHub" },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/deepanshu-sirohi-415269219/", label: "LinkedIn" },
+              {
+                icon: Github,
+                href: "https://github.com/deepthisway",
+                label: "GitHub",
+              },
+              {
+                icon: Linkedin,
+                href: "https://www.linkedin.com/in/deepanshu-sirohi-415269219/",
+                label: "LinkedIn",
+              },
             ].map((social, index) => (
               <motion.a
                 key={social.label}
@@ -193,9 +206,8 @@ export default function HeroSection() {
               </motion.a>
             ))}
           </motion.div>
-
         </div>
       </BackgroundBeamsWithCollision>
     </section>
-  )
+  );
 }
