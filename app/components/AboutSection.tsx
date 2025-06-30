@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Code, Coffee, Gamepad2, Music } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
+import { BackgroundBeams } from "./ui/background-beams-demo"
 
 export default function AboutSection() {
   const funFacts = [
@@ -13,8 +14,9 @@ export default function AboutSection() {
   ]
 
   return (
-    <section id="about" className="py-20 px-4 bg-black h-screen">
-      <div className="max-w-6xl mx-auto my-10">
+    <section id="about" className="py-20 px-4 relative overflow-hidden">
+      <BackgroundBeams className="min-h-screen absolute inset-0 z-0" />
+      <div className="max-w-6xl mx-auto my-10 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,8 +24,12 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">About Me</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">Get to know the person behind the code</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            About Me
+          </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Get to know the person behind the code
+          </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -37,19 +43,23 @@ export default function AboutSection() {
           >
             <div className="prose prose-lg prose-invert">
               <p className="text-gray-300 leading-relaxed">
-                I'm a MCA graduate from NIT Kurukshetra, Haryana and  full-stack developer with expertise in the MERN stack and Next.js. I love creating
-                digital experiences that are not only functional but also beautiful and intuitive.
+                I'm a MCA graduate from NIT Kurukshetra, Haryana and full-stack
+                developer with expertise in the MERN stack and Next.js. I love
+                creating digital experiences that are not only functional but
+                also beautiful and intuitive.
               </p>
 
               <p className="text-gray-300 leading-relaxed">
-                My journey in web development started with curiosity and has evolved into a deep passion for crafting
-                scalable, performant applications. I'm always eager to learn new technologies and tackle challenging
-                problems.
+                My journey in web development started with curiosity and has
+                evolved into a deep passion for crafting scalable, performant
+                applications. I'm always eager to learn new technologies and
+                tackle challenging problems.
               </p>
 
               <p className="text-gray-300 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or
-                enjoying a good cup of coffee while planning my next project.
+                When I'm not coding, you'll find me exploring new technologies,
+                contributing to open-source projects, or enjoying a good cup of
+                coffee while planning my next project.
               </p>
             </div>
 
@@ -75,7 +85,9 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h3 className="text-2xl font-bold mb-6 text-white">Fun Facts About Me</h3>
+            <h3 className="text-2xl font-bold mb-6 text-white">
+              Fun Facts About Me
+            </h3>
 
             {funFacts.map((fact, index) => (
               <motion.div
@@ -89,7 +101,9 @@ export default function AboutSection() {
                   <CardContent className="p-4">
                     <div className="flex items-center space-x-3">
                       <fact.icon className={`h-6 w-6 ${fact.color}`} />
-                      <span className="text-gray-300 font-medium">{fact.text}</span>
+                      <span className="text-gray-300 font-medium">
+                        {fact.text}
+                      </span>
                     </div>
                   </CardContent>
                 </Card>
@@ -122,5 +136,5 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

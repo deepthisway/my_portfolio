@@ -8,70 +8,52 @@ import { TracingBeam } from "@/components/ui/tracing-beam"
 export default function ExperienceSection() {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Solutions",
-      location: "Remote",
-      period: "2023 - Present",
-      description:
-        "Leading development of scalable web applications using MERN stack and Next.js. Mentoring junior developers and implementing best practices for code quality and performance.",
-      achievements: [
-        "Improved application performance by 40% through optimization",
-        "Led a team of 5 developers on multiple projects",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-      ],
-      tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS", "Docker"],
-      website: "#",
-      badge: "Current Role",
-      image: "/placeholder.svg?height=400&width=600",
-    },
-    {
       title: "Full Stack Developer",
-      company: "StartupXYZ",
-      location: "San Francisco, CA",
-      period: "2022 - 2023",
+      company: "Make Me Pro",
+      location: "Canada",
+      period: "2024 - 2025",
       description:
-        "Developed and maintained multiple client projects using modern web technologies. Collaborated with design teams to create pixel-perfect, responsive user interfaces.",
+        "Developed and maintained a Educational Platform projects using modern web technologies. Collaborated with design teams to create pixel-perfect, responsive user interfaces.",
       achievements: [
-        "Built 10+ production-ready applications",
         "Reduced bug reports by 50% through comprehensive testing",
-        "Implemented real-time features using WebSocket technology",
+        "Enhanced user engagement by 30% with improved UI/UX",
       ],
-      tech: ["React", "Express.js", "PostgreSQL", "Socket.io", "Tailwind CSS"],
-      website: "#",
+      tech: ["Next JS","React", "Express.js", "MongoDB", "Tailwind CSS"],
+      website: "makemepro.in",
       badge: "Full Stack",
       image: "/placeholder.svg?height=400&width=600",
     },
-    {
-      title: "Frontend Developer",
-      company: "WebAgency Pro",
-      location: "New York, NY",
-      period: "2021 - 2022",
-      description:
-        "Specialized in creating responsive, accessible web applications with focus on user experience and performance optimization.",
-      achievements: [
-        "Delivered 20+ client projects on time and within budget",
-        "Improved website loading speeds by 35% on average",
-        "Implemented accessibility standards achieving WCAG 2.1 compliance",
-      ],
-      tech: ["React", "JavaScript", "CSS3", "Webpack", "Figma"],
-      website: "#",
-      badge: "Frontend",
-      image: "/placeholder.svg?height=400&width=600",
-    },
+    // {
+    //   title: "Frontend Developer",
+    //   company: "WebAgency Pro",
+    //   location: "New York, NY",
+    //   period: "2021 - 2022",
+    //   description:
+    //     "Specialized in creating responsive, accessible web applications with focus on user experience and performance optimization.",
+    //   achievements: [
+    //     "Delivered 20+ client projects on time and within budget",
+    //     "Improved website loading speeds by 35% on average",
+    //     "Implemented accessibility standards achieving WCAG 2.1 compliance",
+    //   ],
+    //   tech: ["React", "JavaScript", "CSS3", "Webpack", "Figma"],
+    //   website: "#",
+    //   badge: "Frontend",
+    //   image: "/placeholder.svg?height=400&width=600",
+    // },
   ]
 
   const education = [
     {
-      title: "Bachelor of Computer Science",
-      institution: "University of Technology",
-      period: "2018 - 2022",
-      description: "Graduated with honors. Specialized in web development and software engineering.",
+      title: "Masters in Computer Application",
+      institution: "National Institute of Technology, Kurukshetra",
+      period: "2023-2026",
+      description: "Graduated and Specialized in web development and software engineering.",
       badge: "Education",
     },
     {
       title: "AWS Certified Developer",
       institution: "Amazon Web Services",
-      period: "2023",
+      period: "2024",
       description: "Certified in developing and maintaining applications on AWS platform.",
       badge: "Certification",
     },

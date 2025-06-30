@@ -48,19 +48,19 @@ export default function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "deepanshu@example.com",
-      href: "mailto:deepanshu@example.com",
+      value: "contactdeep01@gmail.com",
+      href: "mailto:contactdeep01@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 9193938710",
+      href: "tel:+919193938710",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Kurukshetra, Haryana",
       href: "#",
     },
   ]

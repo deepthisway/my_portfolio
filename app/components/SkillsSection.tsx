@@ -239,7 +239,6 @@ export default function SkillsSection() {
         >
           <TechStackFeatures />
         </motion.div>
-ss
         {/* Stats Section */}
         {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
