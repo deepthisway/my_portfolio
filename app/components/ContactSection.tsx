@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-
+import axios from "axios"
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Check } from "lucide-react"
@@ -31,17 +31,25 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
-    })
-
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    setIsSubmitting(false)
+    
+    try {
+      const res = await axios.post("/api/contact", formData)
+      if(res.data.success)  {
+        toast({
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      })
+      }
+      setFormData({ name: "", email: "", subject: "", message: "" })
+      setIsSubmitting(false)
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [

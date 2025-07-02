@@ -23,6 +23,19 @@ export default function ProjectsSection() {
       gradient: "from-blue-500 via-purple-500 to-pink-500",
     },
     {
+      title: "MentorMile",
+      description:
+        "A personalized career platform that helps users explore industries, track latest trends, access job market insights (roles, salaries, growth), and prepare for interviews with AI-generated quizzes and reviews. Features include resume generation and ATS refinement, as well as AI-crafted cover letters—tailored to the user's skills and industry interests.",
+      image: "/makemepro.png",
+      tech: ["Next JS", "Neon DB", "Inngest"],
+      liveUrl: "https://mentormile.vercel.app/",
+      githubUrl: "https://github.com/deepthisway/mentormile.git",
+      featured: true,
+      status: "Live",
+      year: "2025",
+      gradient: "from-blue-500 via-purple-500 to-pink-500",
+    },
+    {
       title: "Transcript Generator",
       description:
         "A Next.js app that generates college transcripts from user data. Features include real-time data validation, PDF generation, and user-friendly interface.",
@@ -150,13 +163,13 @@ export default function ProjectsSection() {
                   {/* Project Description */}
                   <div className="text-base !m-0 !p-0 font-normal">
                     <span className="text-slate-500 text-sm leading-relaxed">
-                      {project.description.slice(0, 120)}...
+                      {project.description.slice(0, 200)}...
                     </span>
                   </div>
 
                   {/* Tech Stack */}
                   <div className="flex flex-wrap gap-1 mt-3 mb-4">
-                    {project.tech.slice(0, 3).map((tech) => (
+                    {project.tech.slice(0, project.tech.length).map((tech) => (
                       <Badge
                         key={tech}
                         variant="secondary"
@@ -165,11 +178,11 @@ export default function ProjectsSection() {
                         {tech}
                       </Badge>
                     ))}
-                    {project.tech.length > 3 && (
+                    {/* {project.tech.length > 3 && (
                       <Badge variant="secondary" className="text-xs bg-gray-500/20 text-gray-300 border-gray-500/30">
                         +{project.tech.length - 3}
                       </Badge>
-                    )}
+                    )} */}
                   </div>
 
                   {/* Project Image/Gradient */}
@@ -184,8 +197,8 @@ export default function ProjectsSection() {
                       className="flex items-center gap-1 px-3 py-1 rounded-lg text-xs font-normal text-slate-300 hover:text-white transition-colors duration-200"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      <ExternalLink className="h-3 w-3" />
-                      Live Demo
+                      
+
                     </a>
                     <a
                       href={project.githubUrl}
@@ -316,14 +329,14 @@ export default function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button
+          {/* <Button
             variant="outline"
             size="lg"
             className="px-8 py-3 rounded-full font-medium border-2 hover:bg-gray-50 dark:hover:bg-gray-900 transition-all duration-200 group bg-transparent"
           >
             View All Projects
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          </Button> */}
         </motion.div>
       </div>
     </section>
