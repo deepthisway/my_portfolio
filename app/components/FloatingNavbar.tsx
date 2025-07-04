@@ -148,7 +148,7 @@ export default function FloatingNavbar() {
         {/* Social Links */}
         <div className="flex items-center space-x-2 ml-2 pl-2 border-l border-neutral-200 dark:border-white/[0.2]">
           <a
-            href="https://github.com/deepthiway"
+            href="https://github.com/deepthisway"
             target="_blank"
             rel="noopener noreferrer"
             className="p-1 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors duration-200"
