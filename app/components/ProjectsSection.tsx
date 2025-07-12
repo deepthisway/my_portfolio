@@ -10,16 +10,16 @@ import Image from "next/image"
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "Make Me Pro",
+      title: "Evenly",
       description:
-        "A full-stack study pltform solution with NextJs, React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
+        "Evenely is a fully responsive expense-splitting web application modeled after Splitwise.",
       image: "/makemepro.png",
-      tech: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-      liveUrl: "https://makemepro.in",
-      githubUrl: "https://github.com/deepthisway/makemepro.git",
+      tech: ["Next JS", "Convex", "Inngest", "Shadcn UI"],
+      liveUrl: "https://evenly-next.vercel.app/",
+      githubUrl: "https://github.com/deepthisway/evenly-next.git",
       featured: true,
       status: "Live",
-      year: "2024",
+      year: "2025",
       gradient: "from-blue-500 via-purple-500 to-pink-500",
     },
     {
@@ -36,6 +36,19 @@ export default function ProjectsSection() {
       gradient: "from-blue-500 via-purple-500 to-pink-500",
     },
     {
+      title: "Make Me Pro",
+      description:
+        "A full-stack study pltform solution with NextJs, React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
+      image: "/makemepro.png",
+      tech: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
+      liveUrl: "https://makemepro.in",
+      githubUrl: "https://github.com/deepthisway/makemepro.git",
+      featured: true,
+      status: "Live",
+      year: "2024",
+      gradient: "from-blue-500 via-purple-500 to-pink-500",
+    },
+    {
       title: "Transcript Generator",
       description:
         "A Next.js app that generates college transcripts from user data. Features include real-time data validation, PDF generation, and user-friendly interface.",
@@ -43,7 +56,7 @@ export default function ProjectsSection() {
       tech: ["Next.js", "PostgreSQL", "Socket.io", "Framer Motion"],
       liveUrl: "https://transcript-generator-five.vercel.app",
       githubUrl: "https://github.com/deepthisway/Transcript-Generator.git",
-      featured: true,
+      featured: false,
       status: "Live",
       year: "2024",
       gradient: "from-green-500 via-teal-500 to-blue-500",
